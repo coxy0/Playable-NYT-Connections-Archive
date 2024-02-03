@@ -1,0 +1,6 @@
+:root {
+  --desktop-item-width: 150px;
+  --desktop-item-height: 80px;
+  --mobile-item-size: 22.5vw;
+  --mobile-max-item-size: 22.5vw;
+}

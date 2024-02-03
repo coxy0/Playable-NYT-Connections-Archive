@@ -1,0 +1,47 @@
+@import "../../common/ButtonSizing.css";
+
+.game-btn {
+  width: var(--desktop-item-width);
+  height: var(--desktop-item-height);
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+
+  -webkit-transition: all 0.12s;
+  transition: all 0.12s;
+}
+
+.default {
+  color: black;
+  background-color: rgb(239, 239, 230);
+}
+
+.selected {
+  color: white;
+  background-color: rgb(90, 89, 78);
+}
+
+.game-btn:active:hover {
+  -webkit-transform: scale(0.88);
+  transform: scale(0.88);
+}
+
+@media screen and (max-width: 768px) {
+  .game-btn {
+    min-width: 20px;
+    width: var(--mobile-item-size);
+    min-height: 70px;
+    height: var(--mobile-item-size);
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .game-btn {
+    width: 20vw;
+    height: 20vw;
+  }
+}

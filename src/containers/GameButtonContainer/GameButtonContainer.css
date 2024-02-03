@@ -1,0 +1,19 @@
+@import "../../common/ButtonSizing.css";
+
+#board {
+  position: relative;
+  width: calc(24px + 4 * var(--desktop-item-width));
+  height: calc(24px + 4 * var(--desktop-item-height));
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 768px) {
+  #board {
+    width: calc(24px + 4 * var(--mobile-item-size));
+    height: calc(24px + 4 * var(--mobile-item-size));
+  }
+}

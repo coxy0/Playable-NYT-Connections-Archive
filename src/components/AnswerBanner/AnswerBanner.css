@@ -1,0 +1,46 @@
+@import "../../common/ButtonSizing.css";
+
+.answer-banner {
+  width: calc(24px + 4 * var(--desktop-item-width));
+  height: var(--desktop-item-height);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-align: center;
+  color: black;
+  background-color: white;
+  border-radius: 6px;
+}
+
+.group-0 {
+  background-color: rgb(249, 223, 109);
+}
+
+.group-1 {
+  background-color: rgb(160, 195, 90);
+}
+
+.group-2 {
+  background-color: rgb(176, 196, 239);
+}
+
+.group-3 {
+  background-color: rgb(186, 129, 197);
+}
+
+.answer-banner > p > span {
+  font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+  .answer-banner {
+    min-width: 20px;
+    width: 100%;
+    min-height: 70px;
+    height: var(--mobile-item-size);
+    font-size: 16px;
+    }
+  }

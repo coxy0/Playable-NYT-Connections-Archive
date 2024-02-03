@@ -1,0 +1,36 @@
+.tool-btn {
+  width: fit-content;
+  min-width: 5.5em;
+  max-width: 80vw;
+  height: 3em;
+  min-height: 40px;
+  padding: 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: white;
+  border: black solid 1px;
+  border-radius: 32px;
+}
+
+#deselect-all-button {
+  width: 120px;
+}
+
+#submit-button {
+  color: white;
+  background-color: black;
+  border: unset;
+}
+
+.touched {
+  background-color: rgb(226, 226, 226);
+}
+
+#submit-button.inactive {
+  color: rgb(127, 127, 127);
+  background-color: white;
+  border: rgb(127, 127, 127) solid 1px;
+}

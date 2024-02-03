@@ -1,0 +1,13 @@
+#tool-buttons {
+  margin: 24px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+@media screen and (max-width: 380px) {
+  #tool-buttons {
+    margin: 16px 0;
+  }
+}

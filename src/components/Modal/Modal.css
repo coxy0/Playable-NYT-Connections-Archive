@@ -1,0 +1,148 @@
+.modal {
+  height: unset;
+  position: absolute;
+  inset: 0;
+  z-index: 8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.modal h2 {
+  display: block;
+  font-size: 28px;
+  line-height: 30px;
+  margin-top: 5px;
+  margin-bottom: 8px;
+}
+
+.modal p {
+  margin-top: 10px;
+  font-size: 1em;
+  line-height: 1.2em;
+}
+
+.modal-subtitle {
+  font-weight: bold;
+}
+
+.modal ul {
+  margin: 0;
+  margin-block-start: 0;
+  margin-block-end: 0.7em;
+  padding: 0 1em;
+  font-size: 1em;
+  line-height: 1.3;
+  list-style: unset;
+}
+
+.visible {
+  animation: slideIn 200ms forwards;
+}
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.closing {
+  animation: slideOut 200ms forwards;
+}
+
+@keyframes slideOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(60px);
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 520px;
+  padding: 32px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  box-shadow: 0 3px 12px -1px rgba(0, 0, 0, 0.3);
+}
+
+.close-x {
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: black;
+  background-image: url(https://www.nytimes.com/games-assets/v2/assets/icon-close.svg);
+}
+
+#help-modal {
+  width: auto;
+}
+
+#help-modal .modal-content {
+  max-height: 95%;
+  align-items: flex-start;
+  font-weight: normal;
+  border-radius: 10px 10px 0 0;
+}
+
+@media screen and (min-width: 520px) {
+  #help-modal {
+    margin: 15px 0 0 0;
+  }
+}
+
+#colour-descriptions {
+  position: relative;
+}
+
+#help-arrow {
+  height: 2.2rem;
+  position: absolute;
+  bottom: 1.4rem;
+  left: 2.6rem;
+}
+
+.help-emojis {
+  display: flex;
+  flex-direction: column;
+}
+
+.emoji-row {
+  display: flex;
+  align-items: center;
+}
+
+.help-emoji {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+  margin-bottom: 1.5px;
+  display: inline-block;
+  border-radius: 2px;
+}
+
+

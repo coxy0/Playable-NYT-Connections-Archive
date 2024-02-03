@@ -1,0 +1,11 @@
+.bubble {
+  width: 16px;
+  height: 16px;
+  background-color: rgb(90, 89, 78);
+  border-radius: 50%;
+  opacity: 100;
+}
+
+.lost {
+  background-color: white;
+}
