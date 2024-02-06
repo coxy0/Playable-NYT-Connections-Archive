@@ -28,11 +28,11 @@ const Modal = ({ id, visible, onClickClose, children }: Props) => {
     >
       <div className="modal-content">
         <button
-          id="close-help"
+          id="close-modal"
           className="close-x"
           onMouseDown={handleClickClose}
         ></button>
-        <div id="inner-help">{children}</div>
+        <div id="inner-content">{children}</div>
       </div>
     </div>
   );

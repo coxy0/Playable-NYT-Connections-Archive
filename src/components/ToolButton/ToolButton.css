@@ -19,6 +19,10 @@
   width: 120px;
 }
 
+#show-results-button {
+  width: 110px;
+}
+
 #submit-button {
   color: white;
   background-color: black;

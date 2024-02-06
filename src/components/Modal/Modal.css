@@ -1,4 +1,5 @@
 .modal {
+  width: auto;
   height: unset;
   position: absolute;
   inset: 0;
@@ -13,10 +14,11 @@
 
 .modal h2 {
   display: block;
-  font-size: 28px;
-  line-height: 30px;
   margin-top: 5px;
   margin-bottom: 8px;
+  font-size: 28px;
+  line-height: 30px;
+  text-align: center;
 }
 
 .modal p {
@@ -78,6 +80,7 @@
 .modal-content {
   width: 100%;
   max-width: 520px;
+  max-height: 95%;
   padding: 32px;
   position: relative;
   display: flex;
@@ -85,6 +88,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
+  border-radius: 10px 10px 0 0;
   box-shadow: 0 3px 12px -1px rgba(0, 0, 0, 0.3);
 }
 
@@ -96,23 +100,6 @@
   right: 12px;
   color: black;
   background-image: url(https://www.nytimes.com/games-assets/v2/assets/icon-close.svg);
-}
-
-#help-modal {
-  width: auto;
-}
-
-#help-modal .modal-content {
-  max-height: 95%;
-  align-items: flex-start;
-  font-weight: normal;
-  border-radius: 10px 10px 0 0;
-}
-
-@media screen and (min-width: 520px) {
-  #help-modal {
-    margin: 15px 0 0 0;
-  }
 }
 
 #colour-descriptions {
@@ -145,4 +132,30 @@
   border-radius: 2px;
 }
 
+#congrats-title {
+  margin: 8px 0;
+  font-size: 36px;
+}
 
+#puzzle-title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#emoji-recap {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+}
+
+.results-emoji-row {
+  margin: auto;
+  display: flex;
+}
+
+.results-emoji {
+  width: 32px;
+  height: 32px;
+  margin: 2px 0;
+  border-radius: 4px;
+}
